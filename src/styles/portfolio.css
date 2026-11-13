@@ -1,0 +1,116 @@
+/* ===== Portfolio Page Styles ===== */
+
+.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.portfolio-header-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-6);
+}
+
+.portfolio-overview {
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at bottom right, rgba(123, 97, 255, 0.15) 0%, transparent 70%), var(--bg-card);
+}
+
+.overview-label {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.overview-balance {
+  font-family: var(--font-display);
+  font-size: var(--fs-5xl);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.overview-metrics {
+  display: flex;
+  gap: var(--space-6);
+  width: 100%;
+  justify-content: center;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-color);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metric-value {
+  font-size: var(--fs-xl);
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+}
+
+.metric-label {
+  font-size: var(--fs-xs);
+  color: var(--text-tertiary);
+}
+
+/* Holdings Table */
+.holdings-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.holdings-title {
+  font-size: var(--fs-xl);
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.empty-holdings {
+  padding: var(--space-12);
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 768px) {
+  .portfolio-header-section {
+    grid-template-columns: 1fr;
+  }
+}
